@@ -5,7 +5,7 @@ const { validationResult } = require("express-validator");
 
 const usuariosGet = async (req = request, res = response) => {
   // const { q, nombre = 'No name', apikey, page = 1, limit } = req.query;
-  const { limite = 2, desde = 0 } = req.query;
+  const { limite = 0, desde = 0 } = req.query;
  
   const resp = await Promise.all([
     Usuario.countDocuments(),

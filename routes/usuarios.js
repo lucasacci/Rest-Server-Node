@@ -11,8 +11,6 @@ const { esRoleValido, emailExiste, existeUsuarioPorId } = require('../helpers/db
 const { validarCampos } = require('../middlewares/validar-campos');
 
 const router = Router();
-
-
 router.get('/', usuariosGet );
 
 router.put('/:id',[
